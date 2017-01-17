@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/jamesrichford/mixinherit#readme",
   "devDependencies": {
-    "alsatian": "^1.0.1"
+    "alsatian": "^1.0.1",
+    "typescript": "^2.1.5"
   }
 }
