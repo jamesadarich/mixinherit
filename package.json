@@ -1,0 +1,24 @@
+{
+  "name": "mixinherit",
+  "version": "1.0.0-beta.0",
+  "description": "typescript mixin class for inheriting from a mixin",
+  "main": "index.js",
+  "scripts": {
+    "test": "alsatian \"./**/*.spec\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesrichford/mixinherit.git"
+  },
+  "keywords": [
+    "inherit",
+    "mixin",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jamesrichford/mixinherit/issues"
+  },
+  "homepage": "https://github.com/jamesrichford/mixinherit#readme"
+}
