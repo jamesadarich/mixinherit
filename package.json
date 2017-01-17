@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/jamesrichford/mixinherit/issues"
   },
-  "homepage": "https://github.com/jamesrichford/mixinherit#readme"
+  "homepage": "https://github.com/jamesrichford/mixinherit#readme",
+  "devDependencies": {
+    "alsatian": "^1.0.1"
+  }
 }
