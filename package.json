@@ -4,7 +4,10 @@
   "description": "typescript mixin class for inheriting from a mixin",
   "main": "index.js",
   "scripts": {
-    "test": "alsatian \"./**/*.spec\""
+    "build": "tsc",
+    "build-publish": "tsc --newLine \"LF\"",
+    "pretest": "npm run build",
+    "test": "alsatian \"./**/*.spec.js\""
   },
   "repository": {
     "type": "git",

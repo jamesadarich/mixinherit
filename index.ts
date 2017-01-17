@@ -5,9 +5,11 @@ export default function Mixin(...constructors: Array<new (...args: Array<any>) =
       return constructors[0].apply(constructors[1].apply(this, arguments) || this, arguments);
     }
   };
-  void Object.assign(mixedClass.prototype, constructors[0].prototype, constructors[1].prototype);
-  for (const p in constructors[1]) if (constructors[1].hasOwnProperty(p)) mixedClass[p] = constructors[1][p];
-  for (const p in constructors[0]) if (constructors[0].hasOwnProperty(p)) mixedClass[p] = constructors[0][p];
+  
+  (<any> Object).assign(mixedClass.prototype, constructors[0].prototype, constructors[1].prototype);
+
+  for (const p in constructors[1]) if (constructors[1].hasOwnProperty(p)) (<any> mixedClass)[p] = (<any >constructors[1])[p];
+  for (const p in constructors[0]) if (constructors[0].hasOwnProperty(p)) (<any> mixedClass)[p] = (<any >constructors[0])[p];
 
   return mixedClass;/*
     const base = () => { };
