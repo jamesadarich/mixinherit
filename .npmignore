@@ -1,0 +1,19 @@
+#NPM
+node_modules
+npm-debug.log
+
+#Testing
+test
+coverage
+
+#CI
+.travis.yml
+.codeclimate.yml
+
+#DevOps
+scripts
+
+# TypeScript
+*.js.map
+*.ts
+!*.d.ts
