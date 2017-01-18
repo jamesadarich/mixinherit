@@ -9,10 +9,10 @@ class A {
 
 class B {
 
-    field = "test";
+    field = "field value";
 
     get property() {
-        return "test";
+        return "property value";
     }
 
     bFunction() {
@@ -22,6 +22,7 @@ class B {
 
 class C extends Mixin(A, B) implements A, B {
     field: string;
+    property: string;
     aFunction: () => {}
     bFunction: () => {}
     cFunction() {
@@ -42,7 +43,7 @@ export default class MixinTests {
     }
 
     @Test("functions are the same")
-    public extensionHasFunctions() {
+    public extensionHasSameFunctions() {
         const test = new C();
 
         Expect(test.aFunction).toBe(new A().aFunction);
@@ -58,7 +59,7 @@ export default class MixinTests {
     }
 
     @Test("properties are the same")
-    public extensionHasProperties() {
+    public extensionHasSameProperties() {
 
         const test = new C();
 
@@ -74,7 +75,7 @@ export default class MixinTests {
     }
 
     @Test("fields are the same")
-    public extensionHasFields() {
+    public extensionHasSameFields() {
 
         const test = new C();
 
